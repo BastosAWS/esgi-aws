@@ -1,4 +1,6 @@
-#!/bin/bash
+ #!/bin/bash
+sudo su
 yum -y install httpd
-echo "<p> My First Instance from AWS !</p>" >> /var/www/html/index.html
+echo "<p> Welcome on your instance host on AWS ! </p>" >> /var/www/html/index.html
+sudo systemctl enable httpd
 sudo systemctl start httpd
